@@ -1,0 +1,46 @@
+<html>
+    <head> 
+        <title>Basic FORM using HTML</title>
+        <style> h1{color:#dc143c;} 
+        </style>
+    </head>
+    <body>
+        <h1> Log-in Credentials form </h1>
+        <form action="#">
+          <fieldset>
+              <legend> Personal Details </legend>               
+              <p>
+                  <label><b>First Name : </b><input name="firstname"/> </label>
+                  <label>Last Name : <input name="lastname"/> </label> 
+              </p> 
+              <p> Gender :
+                  <label><input type="radio" name="gender" 
+                  value="male"/> Male </label>
+                  <label><input type="radio" name="gender"
+                  value="female"/> Female</label>
+              </p>
+              <p>
+                 <label>
+                      <i><address>Email : xyz123@gmail.com </address><input name="email"/> </i>
+                  </label>
+              </p>
+              <p> 
+                  <label>Date of Birth : <input type="date" name="dateofbirth"> 
+                  </label>
+              </p>
+              <p>
+                  <label>Address :
+                      <br />
+                      <textarea name="address" cols="30"
+                          rows="3"></textarea>
+                  </label>
+              </p>
+              <p> <mark>
+                  <button type="submit">Submit 
+                  </button></mark>
+              </p>
+              <hr>
+          </fieldset>
+        </form>
+    </body>
+</html>
