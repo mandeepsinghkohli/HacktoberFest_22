@@ -1,46 +1,143 @@
-<html>
-    <head> 
-        <title>Basic FORM using HTML</title>
-        <style> h1{color:#dc143c;} 
-        </style>
-    </head>
-    <body>
-        <h1> Log-in Credentials form </h1>
-        <form action="#">
-          <fieldset>
-              <legend> Personal Details </legend>               
-              <p>
-                  <label><b>First Name : </b><input name="firstname"/> </label>
-                  <label>Last Name : <input name="lastname"/> </label> 
-              </p> 
-              <p> Gender :
-                  <label><input type="radio" name="gender" 
-                  value="male"/> Male </label>
-                  <label><input type="radio" name="gender"
-                  value="female"/> Female</label>
-              </p>
-              <p>
-                 <label>
-                      <i><address>Email : xyz123@gmail.com </address><input name="email"/> </i>
-                  </label>
-              </p>
-              <p> 
-                  <label>Date of Birth : <input type="date" name="dateofbirth"> 
-                  </label>
-              </p>
-              <p>
-                  <label>Address :
-                      <br />
-                      <textarea name="address" cols="30"
-                          rows="3"></textarea>
-                  </label>
-              </p>
-              <p> <mark>
-                  <button type="submit">Submit 
-                  </button></mark>
-              </p>
-              <hr>
-          </fieldset>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+
+
+    <!-- Bootsrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Internal CSS -->
+
+    <style>
+        body {
+            background-color: #080710;
+        }
+
+        #reg-form {
+            font-size: 35px;
+            color: cadetblue;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #myDiv {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            background-color: rgba(255, 255, 255, 0.13);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+        }
+
+        #myDiv * {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+
+        .form1 input {
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        #dob {
+            color: rgba(122, 195, 237, 0.6);
+            font-size: 15px;
+
+
+        }
+
+        #submit {
+            height: 40px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        #textArea {
+            color: #080710;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="myDiv">
+
+        <p id="reg-form">Login - Credential Form</p>
+        <form actions="#" class="form1">
+            First Name <input type="text">
+            <br>
+            Last Name <input type="text">
+            <br>
+            Email <input type="email">
+            <br>
+            <br>
+            <br>
         </form>
-    </body>
+
+
+        <p style="font-size: 17px"> Gender :
+            <br>
+            <br>
+            <label><input type="radio" name="gender" value="male" /> Male&nbsp;&nbsp; </label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </p>
+        <br>
+        <br>
+
+        <p>
+            <label class="form1"><span style="font-size: 14">Date Of Birth</span><input id="dob" type="date"
+                    name="dateofbirth">
+            </label>
+        </p>
+
+        <br>
+        <br>
+
+        <p>
+            <label>Address :
+                <br>
+                <br>
+                <textarea id="textArea" name="address" cols="30" rows="3"></textarea>
+            </label>
+        </p>
+
+        <br>
+
+        <button id="submit">
+            Submit
+        </button>
+
+    </div>
+</body>
+
 </html>
